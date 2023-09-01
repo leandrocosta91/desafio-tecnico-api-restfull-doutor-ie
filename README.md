@@ -4,7 +4,7 @@ O objetivo de desafio é mostrar a habilidade em construção de API restfull ut
 
 O projeto consiste em ter dois end-points: um para listagem de livros e outro para salvar livros.
 
-As regras estão no arquivo **pleno-desafio-laravel.pdf**.
+As regras do projeto estão no arquivo **pleno-desafio-laravel.pdf**.
 
 Ao salvar livros, serão salvos os índices e páginas juntos.
 
