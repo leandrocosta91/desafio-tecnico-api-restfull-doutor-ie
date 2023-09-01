@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "3dc90d4f-5265-4536-9b87-8a62a1cded18",
+		"name": "api-doutor-ie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "livros.index",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjM5NmQwOTM3NzY1Y2U5ZjFkYzQ3ZmU3MDQwYzkyNmM3MmQzMGM4ZWEzMmJmOTY5MTBiMzYyNmMxZDhkMzkyYjBmNTI5ZDlhOGUyNWI4NDEiLCJpYXQiOjE2OTM1NTY5MTQuMDc4NjExLCJuYmYiOjE2OTM1NTY5MTQuMDc4NjEzLCJleHAiOjE3MjUxNzkzMTQuMDE5OTY2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Fj-KopafbV8HC3qXnVNKRRjz9qRqdLoxrUfVbPkMNwzJJNgABvyHIKva4NHtS_5vnnVmLfBrNCtdWqOFZbSmHbW0enGeHOEIsxZW06IGlG73yvTQR_r5ZfCn89WJjh51LKpBHtG6ZhTfD1WZufCmEOBV_00b4KLhLMEz3cXM8ITLgNh7_XVABTqlf0YND_-h2bwrjektusQi8_t_S3AyQ99yWwEqVar-7Eu7dSRw7VA_wIdbTcOyEmYSQ34l54AWv0MvPuGc6PQyodw2670W5ko16sYFNOvMIEKts7g7F1tw2e9K16kN30xH96ikkW_4lCAvJNCQTvtj8v7suAcdi6D8DcSgDBc2wxt1aK8rnxa3EDFJwFqIzKW4BerYHkFUHoj8XZZehkA__Kgd9atU5ZEA45mcQjIOq484UeI9Z3npv_4Iw0SgZwU9MWYOEFZoePXTNP4wpqFAORCKlw3ubtKjHszBMZQ07a-7mwFwGKsLSNvpTC3KmJV1IBm26zHF1Ag6pyvWr6Z88kuKNjhA-r1HfVY8l1aVJOghtB2MbPrXT4d9ditWQQ04dl0w_8FCSAWjrj3y1TQoDSu3AxwZbil3Qyv6fd4Bwi9B3RJaKv7x6TOJCJaoOb8xWKsSDJTVZijCFfHA0yfdpJ1pZZNhoLVa4uKjDlrRk3XGERuIJYg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost/v1/livros?titulo=&titulo_do_indice=teste",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"livros"
+					],
+					"query": [
+						{
+							"key": "titulo",
+							"value": ""
+						},
+						{
+							"key": "titulo_do_indice",
+							"value": "teste"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "livros.store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjM5NmQwOTM3NzY1Y2U5ZjFkYzQ3ZmU3MDQwYzkyNmM3MmQzMGM4ZWEzMmJmOTY5MTBiMzYyNmMxZDhkMzkyYjBmNTI5ZDlhOGUyNWI4NDEiLCJpYXQiOjE2OTM1NTY5MTQuMDc4NjExLCJuYmYiOjE2OTM1NTY5MTQuMDc4NjEzLCJleHAiOjE3MjUxNzkzMTQuMDE5OTY2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Fj-KopafbV8HC3qXnVNKRRjz9qRqdLoxrUfVbPkMNwzJJNgABvyHIKva4NHtS_5vnnVmLfBrNCtdWqOFZbSmHbW0enGeHOEIsxZW06IGlG73yvTQR_r5ZfCn89WJjh51LKpBHtG6ZhTfD1WZufCmEOBV_00b4KLhLMEz3cXM8ITLgNh7_XVABTqlf0YND_-h2bwrjektusQi8_t_S3AyQ99yWwEqVar-7Eu7dSRw7VA_wIdbTcOyEmYSQ34l54AWv0MvPuGc6PQyodw2670W5ko16sYFNOvMIEKts7g7F1tw2e9K16kN30xH96ikkW_4lCAvJNCQTvtj8v7suAcdi6D8DcSgDBc2wxt1aK8rnxa3EDFJwFqIzKW4BerYHkFUHoj8XZZehkA__Kgd9atU5ZEA45mcQjIOq484UeI9Z3npv_4Iw0SgZwU9MWYOEFZoePXTNP4wpqFAORCKlw3ubtKjHszBMZQ07a-7mwFwGKsLSNvpTC3KmJV1IBm26zHF1Ag6pyvWr6Z88kuKNjhA-r1HfVY8l1aVJOghtB2MbPrXT4d9ditWQQ04dl0w_8FCSAWjrj3y1TQoDSu3AxwZbil3Qyv6fd4Bwi9B3RJaKv7x6TOJCJaoOb8xWKsSDJTVZijCFfHA0yfdpJ1pZZNhoLVa4uKjDlrRk3XGERuIJYg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"livro de teste 1\",\n    \"indices\": [\n        {\n            \"titulo\": \"indice de teste 1\",\n            \"pagina\": 2,\n            \"subindices\" : [\n                {\n                    \"titulo\": \"indice de teste 1.1\",\n                    \"pagina\": 3,\n                    \"subindices\" : []\n                }\n            ]\n        },\n        {\n            \"titulo\": \"indice de teste 2\",\n            \"pagina\": 4,\n            \"subindices\" : []\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/v1/livros",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"v1",
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oauth.token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "default"
+						},
+						{
+							"key": "client_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "client_secret",
+							"value": "D79zAwhAuw2YukfPxylh8sfQllhjdVx1McC8Cr2W",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "leandro.costa91@outlook.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "minhasenha",
+							"type": "default"
+						},
+						{
+							"key": "scope",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
